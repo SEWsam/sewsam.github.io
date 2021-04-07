@@ -1,0 +1,54 @@
+# game build definitions
+# syntax -> id=executable name:md5 checksum
+steamv1=DOOMEternalx64vk.exe:7ea73e0ee1a2066dc43502930ededced
+steam14052020=DOOMEternalx64vk.exe:f7cc91087e48408ee5703affcc356bee
+steam16052020=DOOMEternalx64vk.exe:401bc43fc0d3719285cfb6ccee6b3393
+steam27052020=DOOMEternalx64vk.exe:70426fc580f2c064cb618317fd1a9d5e
+steam25062020=DOOMEternalx64vk.exe:53b98af0cb0e3ffe9019ac62bad83703
+steam04082020=DOOMEternalx64vk.exe:4fd80156710af0b0bd5d8a648e209f9b
+steamdlc1=DOOMEternalx64vk.exe:c03c73dbd60683e3bf157a362e5da16e
+steam23102020=DOOMEternalx64vk.exe:3c770f56d3c148b648ee1d294e288e1c
+steam01122020=DOOMEternalx64vk.exe:88da87233f2b02fb5086de9296ea2440
+steam09122020=DOOMEternalx64vk.exe:c2b429b2eb398f836dd10d22944b9c76
+steamdlc2=DOOMEternalx64vk.exe:96556f8b0dfc56111090a6b663969b86
+bnetv1=DOOMEternalx64vk.exe:7bb1e931cbbbc3d2d3cea1dd6df05539
+bnet14052020=DOOMEternalx64vk.exe:ea273f1400d8975807a9ccb0c9a62bce
+bnet16052020=DOOMEternalx64vk.exe:e66341899207dc0f0953c021469789fc
+bnet27052020=DOOMEternalx64vk.exe:47d0917e19435a73c4e95303145545e1
+bnet25062020=DOOMEternalx64vk.exe:ced0169a885bcdebac896a986d31c25e
+bnet04082020=DOOMEternalx64vk.exe:1ba954ead68ae9f8b5f8b226f56aec64
+bnet04082020v2=DOOMEternalx64vk.exe:c99b4c558b855c53cd0becec36a947a3
+bnetdlc1=DOOMEternalx64vk.exe:7eaf670f3d874810310eca1c3b476327
+bnetdlc2=DOOMEternalx64vk.exe:b4eef9284826e5ffaedbcd73fe6d2ae6
+bnet23102020=DOOMEternalx64vk.exe:79d616e0d930c3128aa74f6dbaf25279
+bnet01122020=DOOMEternalx64vk.exe:49d00a9f2c858d6bba8e126e8ef4a2f3
+bnet09122020=DOOMEternalx64vk.exe:1ef861b693cdaa45eba891d084e5f3a3
+uwpdlc2=DOOMEternalx64vk.exe:5535c56445e55f20e6d3b475217def4f
+drmfreev1=DOOMEternalx64vk.exe:0fdc1a727fb06608d37fa2c5c2926386
+
+# patches
+# syntax -> patch=description:type (offset|pattern):(compatible build ids (comma separated)|all):(offset|pattern):hex patch
+
+# skip data checksum checks (by emoose)
+# Original patch: patch=skip data checksum checks:pattern:all:741E8B534841B8EFBEADDE:EB1E8B534841B8EFBEADDE
+
+# skip data checksum checks (UWP) (by emoose, ported by SEWsam)
+patch=skip data checksum checks (UWP):pattern:uwpdlc2:741F418B564841B8EFBEADDE:EB1F418B564841B8EFBEADDE
+
+# skip checking against hashes inside build-manifest (by emoose)
+patch=skip checking against hashes inside build-manifest:pattern:all:7420488B07488BCFFF50:EB20488B07488BCFFF50
+
+# skip checking against filesizes inside build-manifest (by emoose)
+patch=skip checking against filesizes inside build-manifest:pattern:all:FF5068483BC57443:FF50684889C5EB43
+
+# unrestrict cvars & console commands (by SunBeam, ported by emoose)
+patch=unrestrict cvars & console commands:pattern:all:084C8B0EBA01:084C8B0EBA00
+
+# unrestrict binds (by SunBeam, ported by emoose)
+patch=unrestrict binds:pattern:all:084C8B03BA01:084C8B03BA00
+
+# unrestrict cvars & launch parameters (by emoose)
+patch=unrestrict cvars & launch parameters:pattern:all:CCCCCCCCCCCCCCCC40534883EC50488B842488000000488B:4183C91053EB0390EBF64883EC50488B842488000000488B
+
+# load unsigned build-manifest (by Visual Studio)
+patch=load unsigned build-manifest:pattern:all:4883EC28498BC04C8BC24963D14C8BC9:B801000000C3C04C8BC24963D14C8BC9
