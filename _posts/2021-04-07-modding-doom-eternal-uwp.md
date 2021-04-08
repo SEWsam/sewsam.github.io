@@ -2,7 +2,7 @@
 layout: post
 published: true
 title: 'Installing mods for DOOM Eternal UWP'
-subtitle: 'slightly more technical than just extracting a zip file...'
+subtitle: 'slightly more technical than just extracting a zip file'
 comments: false
 ---
 # Note:
