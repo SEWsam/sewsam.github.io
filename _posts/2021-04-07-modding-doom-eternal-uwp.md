@@ -8,7 +8,7 @@ comments: false
 # Note:
 I won't really be explaining everything... if you're looking for an easy way to get mods working on Game Pass, 
 _I'm pretty close to finishing a tool that will dump the game to an unencrypted location, and patch the existing modding tools to work properly; **doing everything below for you**_ 
-
+(CORRECTION: I won't explain what I mean. this is still generally step by step)
 ## The first problem:
 _**UWP Apps are heavily guarded by the system**_  
 Often, taking ownership of the *WindowsApps* folder through the security dialog in File Explorer is not enough and tends to cause even more issues.
