@@ -3,7 +3,6 @@ layout: post
 published: true
 title: 'Installing mods for DOOM Eternal, Microsoft Store version'
 subtitle: 'slightly more technical than just extracting a zip file...'
-date: '2021-04-07'
 comments: false
 ---
 # Note
