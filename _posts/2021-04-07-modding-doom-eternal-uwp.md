@@ -36,6 +36,8 @@ I don't have _any_ previous experience with low-level programming. But, after so
 
 I used the UWP version and a DRM-free version of the exe so I could compare the two executables (keep in mind I don't know anything about how the patches work at this point).  
 I searched for the bytes that the original patch changes (in the DRM-free exe), then looked for anything I could compare between the two versions. I found a string in the decompiler panel: `resource %s:%s data integrity checksum failure, has: 0x%llx, wants 0x%llx\n`, and then searched for it in the UWP exe.  
-The result: 
-![](https://sewsam.github.io/img/uwp.png) does _about_ the same thing as ![](https://sewsam.github.io/img/nodrm.png)  
-(I think... still don't really know how this works)
+The result:  
+![](https://sewsam.github.io/img/uwp.png)  
+does _about_ the same thing as  
+![](https://sewsam.github.io/img/nodrm.png)  
+(At least, I think... still don't really know how this works)
