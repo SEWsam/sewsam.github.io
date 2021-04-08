@@ -46,5 +46,6 @@ does _about_ the same thing as
 
 So, the next step was to test the patch on this new pattern, changing the first byte to `EB`. This worked.  
 
+---
 
-DM me on discord if I got something wrong or if you have a question about what I learned doing this. (SEWsam#4092)
+**DM me on discord if I got something wrong or if you have a question about what I learned doing this. (SEWsam#4092)**
