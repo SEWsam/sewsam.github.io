@@ -32,7 +32,7 @@ drmfreev1=DOOMEternalx64vk.exe:0fdc1a727fb06608d37fa2c5c2926386
 # skip data checksum checks (by emoose)
 # Original patch: patch=skip data checksum checks:pattern:all:741E8B534841B8EFBEADDE:EB1E8B534841B8EFBEADDE
 
-# skip data checksum checks (UWP) (by emoose, ported by SEWsam)
+# skip data checksum checks (UWP) (by emoose, updated by SEWsam)
 patch=skip data checksum checks (UWP):pattern:uwpdlc2:741F418B564841B8EFBEADDE:EB1F418B564841B8EFBEADDE
 
 # skip checking against hashes inside build-manifest (by emoose)
