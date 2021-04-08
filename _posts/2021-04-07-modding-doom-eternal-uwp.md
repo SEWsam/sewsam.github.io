@@ -38,10 +38,10 @@ I used the UWP version and a DRM-free version of the exe so I could compare the 
 I searched for the bytes that the original patch changes (in the DRM-free exe), then looked for anything I could compare between the two versions.  
 I found a string in the decompiler panel:  
 `resource %s:%s data integrity checksum failure, has: 0x%llx, wants 0x%llx\n`, and then searched for it in the UWP exe.  
-What I think I learned:    
-![DOOMEternalx64vk.exe (UWP)](https://sewsam.github.io/img/uwp.png)  
+**What I think I learned:**    
+![DOOMEternalx64vk.exe (UWP)](https://sewsam.github.io/img/uwp.png) (UWP exe)  
 does _about_ the same thing as  
-![DOOMEternalx64vk.exe (DRM-Free)](https://sewsam.github.io/img/nodrm.png)  
+![DOOMEternalx64vk.exe (DRM-Free)](https://sewsam.github.io/img/nodrm.png) (DRM-Free exe)  
 (At least, I think... still don't really know how this works).
 
 So, the next step was to test the patch on this new pattern, changing the first byte to `EB`. This worked.  
